@@ -1,163 +1,168 @@
-# Tech-Repair-Shop-Terminal
+# Tech Repair Shop Terminal
 
-A terminal-based repair shop management system developed in Python. The program allows users to browse available repair services, add repair jobs to a customer invoice, and generate a professional final bill directly from the terminal.
+A terminal-based repair shop management system developed using Python.
+The project simulates the workflow of a technology repair center by allowing users to manage repair services, create customer invoices, calculate service costs, and generate detailed bills through an interactive command-line interface.
 
-## Project Overview
+The system was designed using Object-Oriented Programming principles to provide clean code organization, reusable components, and structured program flow.
 
-This project simulates the workflow of a small technology repair shop. The system is designed using object-oriented programming concepts and provides a clean command-line interface for managing repair services and invoices.
+---
 
-The application focuses on:
+# Features
 
-* Service management
-* Invoice generation
-* Smart repair cost calculation
+* Display available repair services
+* Add repair jobs to customer invoices
+* Automatic service cost calculation
+* Generate detailed final bills
+* Interactive menu-driven interface
 * Input validation and error handling
-* Professional terminal output
+* Organized object-oriented code structure
+* Simple and user-friendly terminal interaction
 
-## Features
+---
 
-* View all available repair services
-* Add repair jobs to a customer invoice
-* Generate a final detailed receipt
-* Smart service cost calculation for different repair types
-* Object-oriented design using classes and structures
-* Error handling for invalid user input
-* Continuous terminal menu interaction until exit
-* Professional receipt-style terminal output
-
-## Technologies Used
+# Technologies Used
 
 * Python 3
 * Object-Oriented Programming (OOP)
-* Terminal / Command-Line Interface
+* Command-Line Interface (CLI)
 
-## Project Structure
+---
 
-```bash
+# Project Structure
+
+```bash id="s4bzou"
 Tech-Repair-Shop-Terminal/
 │
 ├── main.py
 ├── README.md
-├── assets/
-│   └── demo-video.mp4
-└── screenshots/
+├── screenshots/
+└── demo-video.mp4
 ```
 
-## How to Run the Program
+---
 
-1. Make sure Python 3 is installed on your computer.
+# System Workflow
+
+The program follows a simple repair shop workflow:
+
+1. The user selects a repair service from the menu.
+2. Repair jobs are added to the customer invoice.
+3. The system calculates the total repair cost.
+4. A detailed final bill is generated and displayed.
+
+---
+
+# Code Illustration
+
+## Main Components
+
+### Service Class
+
+The `Service` class stores repair service information such as:
+
+* Service name
+* Repair category
+* Service price
+
+Example responsibilities:
+
+* Creating service objects
+* Managing repair details
+
+---
+
+### Invoice Class
+
+The `Invoice` class handles customer billing operations including:
+
+* Adding repair services
+* Calculating total cost
+* Printing the final invoice
+
+Example responsibilities:
+
+* Storing selected services
+* Managing billing calculations
+
+---
+
+### Menu System
+
+The menu system controls user interaction through a continuous loop that allows the user to:
+
+* View services
+* Add repair jobs
+* Generate invoices
+* Exit the program
+
+---
+
+# Example Program Menu
+
+```text id="5kl6m1"
+=============================
+ Tech Repair Shop System
+=============================
+
+1. View Services
+2. Add Repair Job
+3. Generate Invoice
+4. Exit
+```
+
+---
+
+# Example Invoice Output
+
+```text id="5tdq31"
+========== FINAL BILL ==========
+
+Screen Repair      : $120
+Battery Replacement: $60
+Software Installation: $40
+
+--------------------------------
+Total Cost         : $220
+
+Thank You For Visiting
+```
+
+---
+
+# How to Run
+
+1. Install Python 3 on your computer.
 2. Download or clone the repository.
 3. Open the project folder in the terminal.
 4. Run the following command:
 
-```bash
+```bash id="czhujv"
 python main.py
 ```
 
-## Example Menu
+---
 
-```text
-[1] View Services
-[2] Add to Invoice
-[3] Print Final Bill
-[4] Exit
-```
+# Programming Concepts Applied
 
-## Concepts Applied
+This project demonstrates the use of:
 
-This project demonstrates the following programming concepts:
-
-* Classes and objects
-* Inheritance / polymorphism
-* Functions and modular programming
-* Lists and data handling
-* Input validation
-* Loops and conditional statements
-
-## Video Demonstration
-
-The project includes a recorded demonstration video showing:
-
-* Program execution
-* Service selection
-* Invoice generation
-* Final bill output
-* Explanation of the implemented logic
-
-## Author
-
-Developed as part of a programming assignment/project submission.
+* Classes and Objects
+* Functions and Modular Programming
+* Lists and Data Handling
+* Loops and Conditional Statements
+* Input Validation
+* Object-Oriented Design
 
 ---
 
-# Submission Steps
+# Demonstration Video
 
-## 1. Organize Your Project Files
+Google Drive Video Link:
 
-Make sure your project folder contains:
+[https://drive.google.com/file/d/1NKXas_EwczpL7B26EL2_R4Ic_BXFN7u7/view?usp=share_link](https://drive.google.com/file/d/1NKXas_EwczpL7B26EL2_R4Ic_BXFN7u7/view?usp=share_link)
 
-* Python source code files
-* README.md file
-* Video demonstration
-* Any screenshots or additional assets
+---
 
-Example:
+# Author
 
-```bash
-Tech-Repair-Shop-Terminal/
-├── main.py
-├── README.md
-├── demo-video.mp4
-```
-
-## 2. Create a GitHub Repository
-
-1. Open GitHub.
-2. Click **New Repository**.
-3. Name the repository:
-
-```text
-Tech-Repair-Shop-Terminal
-```
-
-4. Set the repository to **Public**.
-5. Click **Create Repository**.
-
-## 3. Upload Your Files
-
-You can upload using GitHub Desktop, GitHub website, or terminal commands.
-
-### Using Terminal Commands
-
-```bash
-git init
-git add .
-git commit -m "Initial project submission"
-git branch -M main
-git remote add origin YOUR_GITHUB_REPOSITORY_LINK
-git push -u origin main
-```
-
-## 4. Add the README File
-
-Make sure the README.md file appears correctly on the main repository page.
-
-## 5. Upload the Video
-
-* Upload the video directly to the repository
-  OR
-* Upload it to Google Drive or YouTube and place the link in the README.
-
-## 6. Final Check Before Submission
-
-Before submitting, verify:
-
-* The code runs correctly
-* README.md is complete
-* Repository is public
-* Video works properly
-* All required files are uploaded
-
-## 7. Submit the Repository Link
-
-Copy your GitHub repository link and submit it according to your instructor’s instructions.
+Developed as part of a programming project submission.
